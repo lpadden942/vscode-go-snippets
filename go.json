@@ -48,5 +48,21 @@
 			"template.Must(template.New().Funcs().ParseGlob())"
 		],
 		"description": "boilerplate for creating a template with ParseGlob"
+	},
+	"Execute template boilerplate": {
+		"prefix": "et",
+		"body": [
+			"err := tpl.ExecuteTemplate(os.Stdout, name, data)"
+		],
+		"description": "shortcut for execute template code"
+	},
+	"log fatal error": {
+		"prefix": "logferr",
+		"body": [
+			"if err != nil {",
+			"	log.Fatalln(err)",
+			"}"
+		],
+		"description": "shortcut for execute template code"
 	}
 }
